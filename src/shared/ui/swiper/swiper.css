@@ -1,0 +1,50 @@
+.tray-gap {
+display: flex;
+gap: 30px;
+margin: 0; 
+justify-content:  center;
+width: 100%;
+
+}
+
+.tray-gap__news{
+ display: flex;
+ gap: 40px;
+ justify-content:  center;
+ margin: 0; 
+ /* width: 100%; */
+}
+
+.carousel__slide-focus-ring {
+    display: none ;
+    outline-width: 0;
+    }
+    .carousel__dot
+    {
+      
+        width: 5px;
+        height: 5px;
+        background-color:rgb(52, 51, 51);
+        opacity: 50%;
+        border-radius: 5px;
+    }
+
+    .carousel__dot--selected{
+        width: 30px;
+        height: 10px;
+    }
+    .carousel__next-button:disabled {
+        opacity: 0.5;
+        /* pointer-events: none;  */
+    }
+
+    .carousel__back-button:disabled {
+        opacity: 0.5;
+        
+    }
+
+@media screen and (max-width: 599px) {
+    .tray-gap {
+        gap: 0;
+    }
+}
