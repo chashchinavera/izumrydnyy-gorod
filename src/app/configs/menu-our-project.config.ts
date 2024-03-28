@@ -9,7 +9,7 @@ const projectList = [
   },
   {
     title: "Волонтёрство для всех",
-    link: "/nashi-proekti/volov=nterstvo-dlya-vseh",
+    link: "/nashi-proekti/volonterstvo-dlya-vseh",
   },
   {
     title: "Тренировочная квартира",

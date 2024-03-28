@@ -76,7 +76,7 @@ const Page: React.FC = () => {
         </section>
 
         <section className="px-[15px] mb-[80px]">
-          <OurProjects projectList={projectList} />
+          <OurProjects projectsList={projectList} />
         </section>
 
         <section className="mb-[80px] px-[15px]">
@@ -156,7 +156,7 @@ const Page: React.FC = () => {
         </section>
 
         <section className="px-[30px] mb-[100px]">
-          <OurProjects projectList={projectList} />
+          <OurProjects projectsList={projectList} />
         </section>
 
         <section className="mb-[100px]">
@@ -252,7 +252,7 @@ const Page: React.FC = () => {
         </section>
 
         <section className="px-[130px] mb-[140px]">
-          <OurProjects projectList={projectList} />
+          <OurProjects projectsList={projectList} />
         </section>
 
         <section className="mb-[140px]">

@@ -164,7 +164,6 @@ const Page: React.FC<PageProps> = ({ params }) => {
         <div className="flex gap-[10px] justify-center">
           {Array.from(Array(numberOfPages)).map((_, index) => (
             <PaginationButton
-              size="mobile"
               isActive={index + 1 === currentPage}
               key={index + 1}
               onClick={() => {

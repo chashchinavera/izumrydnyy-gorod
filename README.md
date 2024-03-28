@@ -1,5 +1,7 @@
 ### `Изумрудный город. Frontend`
 
+**Яндекс мастерская**
+
 ## Описание проекта
 
 Проект представляет собой сайт центра адаптации и развития "Изумрудный город."
@@ -268,8 +270,8 @@ import MenuOurProjects from "../menu-our-projects/menu-our-projects";
 
        ]
       },
-   ];
-   ```
+   ]
+```
 
 2.  className - дополнительные стили в качестве className извне компонента
 
@@ -531,7 +533,7 @@ import import AnchorTab from '@/src/shared/ui/AnchorTab/AnchorTab'; from '@/src/
 
 Компонент создан с использованием стилей для оптимального отображения как на мобильных устройствах, так и на десктопах.
 
-### Список соцсетей
+### Список_соцсетей
 
 Компонент принимает массив объектов в качестве props, все значения каждого объекта валидируются на строку и все поля являются обязательными. При клике на каждую из соц сетей она будет открыта в новом окне.
 
@@ -698,132 +700,56 @@ interface OurProjectsListProps {
 const OurProjects: React.FC<OurProjectsListProps> = ({ projectList }) => {
 
     return (
-         <div>
-      <h2 className="font-bold text-[22px] md:text-[40px] leading-[33px] md:leading-[60px] text-center text-turquoise-light mb-[30px] md:mb-[60px]">Наши проекты</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[600fr_600fr_400fr] auto-rows-min gap-[20px] md:gap-y-[30px] xl:gap-[25px]">
-        {projectsData.map((project, index) => (
-          // Первый элемент массива
-          index === 0 ? <div key={index} className="flex flex-col md:col-span-2 xl:col-span-1 justify-between rounded-[20px] 
-          bg-blue-light bg-right-bottom bg-no-repeat
-          bg-human0 md:bg-human21 xl:bg-human1
-          pt-[21px] md:pt-[40px]
-          pl-[20px] md:pl-[40px]
-          pb-[20px] md:pb-[40px] xl:pb-[37px]">
-            <p className="font-bold text-[18px] md:text-[30px] leading-[27px] md:leading-[45px] text-turquoise-dark mb-[6px] md:max-w-[320px]">{project.title}</p>
-            <p className="font-normal italic text-[14px] md:text-[16px] leading-[21px] md:leading-[24px] text-turquoise-dark mb-[18px] md:mb-[37px] md:max-w-[320px]">{project.description}</p>
-            <a href={project.link}>
-              <Button
-                variant="regular-1"
-                arrowColor="secondary"
-                withArrow={true}
-                sizeArrow="primary"
-                className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[320px] w-[100%] justify-center"
-              >
-                Подробнее
-              </Button>
-            </a>
-          </div> :
-            // Второй элемент массива
-            index === 1 ? <div key={index} className="flex flex-col md:col-span-2 xl:col-span-1 justify-between rounded-[20px] 
-            bg-blue-light bg-right-bottom bg-no-repeat 
-            bg-human0 md:bg-human22 xl:bg-human2
-            pt-[21px] md:pt-[40px]
-            pl-[20px] md:pl-[40px]
-            pb-[20px] md:pb-[37px]">
-            <p className="font-bold text-[18px] md:text-[30px] leading-[27px] md:leading-[45px] text-turquoise-dark mb-[6px] md:max-w-[320px]">{project.title}</p>
-            <p className="font-normal italic text-[14px] md:text-[16px] leading-[21px] md:leading-[24px] text-turquoise-dark mb-[18px] md:mb-[37px] md:max-w-[320px]">{project.description}</p>
-            <a href={project.link}>
-              <Button
-                variant="regular-1"
-                arrowColor="secondary"
-                withArrow={true}
-                sizeArrow="primary"
-                className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[320px] w-[100%] justify-center"
-              >
-                Подробнее
-              </Button>
-            </a>
-            </div> :
-              // Третий элемент массива
-              index === 2 ? <div key={index} className="flex flex-col md:col-span-2 xl:col-span-2 xl:row-span-2 xl:order-3 justify-between rounded-[20px] 
-              bg-blue-light bg-right-bottom bg-no-repeat xl:bg-human4
-              pt-[21px] md:pt-[40px] xl:pt-[39px]
-              pl-[20px] md:pl-[40px]
-              pb-[20px] md:pb-[40px] xl:pb-[36px]">
-              <p className="font-bold text-[18px] md:text-[30px] leading-[27px] md:leading-[45px] text-turquoise-dark mb-[5px] md:mb-[12px] xl:mb-[15px] md:max-w-[617px]">{project.title}</p>
-              <p className="font-normal italic text-[14px] md:text-[16px] leading-[21px] md:leading-[24px] text-turquoise-dark mb-[5px] md:mb-[7px] xl:mb-[17px] md:max-w-[617px]">{project.description}</p>
-              <p className="font-bold text-[14px] md:text-[20px] leading-[21px] md:leading-[30px] text-turquoise-dark mb-[20px] md:mb-[17px] xl:mb-[80px] md:max-w-[617px]">{project.highlight}</p>
-              <a href={project.link}>
+        <div className='xl:py-[30px] px-[15px] xl:px-[130px]'>
+            <h2 className='text-[22px] xl:text-[40px] leading-[33px] xl:leading-[60px] font-bold text-turquoise-light text-center mb-[30px] xl:mb-[60px]'>Наши проекты</h2>
+            <div className='grid grid-cols-1 xl:grid-cols-[600fr_600fr_400fr] grid-rows-[154px_154px_291px_118px_118px_118px] xl:grid-rows-[289px_188px_226px] gap-[20px] xl:gap-[25px] 
+            xl:[&>*:nth-child(3)]:col-span-2 xl:[&>*:nth-child(3)]:row-span-2 
+            [&>*:nth-child(1)]:bg-human0 [&>*:nth-child(2)]:bg-human0
+            xl:[&>*:nth-child(1)]:bg-human1 xl:[&>*:nth-child(2)]:bg-human2 xl:[&>*:nth-child(3)]:bg-human4 
+            xl:[&>*:nth-child(3)]:order-3
+            xl:[&>*:nth-child(4)]:order-2
+            xl:[&>*:nth-child(5)]:order-4
+            xl:[&>*:nth-child(6)]:order-5
+            '>
+
+
+                {/*поменять Projects на projectList */}
+
+
+                {Projects.map((project, index) => (
+                    <div key={index} className='flex flex-col justify-between rounded-[20px] bg-blue-light bg-right bg-no-repeat pt-[20px] xl:pt-[35px] pb-[18px] xl:pb-[37px]
+                    pl-[20px] xl:pl-[40px]'>
+                        <div className='xl:max-w-[320px] xl:[:nth-of-type(3)_&]:max-w-[617px] t-[40px]'>
+                            <p className='text-[18px] xl:text-[30px] leading-[27px] xl:leading-[47px] text-turquoise-dark font-bold xl:[:nth-of-type(3)_&]:leading-[45px] 
+                                xl:[:nth-of-type(5)_&]:text-[25px] xl:[:nth-of-type(5)_&]:leading-[37.5px]
+                                xl:[:nth-of-type(6)_&]:text-[25px] xl:[:nth-of-type(6)_&]:leading-[37.5px]'>{project.title}</p>
+                            <p className='text-[14px] xl:text-[16px] leading-[21px] xl:leading-[24px] text-turquoise-dark font-normal italic mt-[7px] xl:mt-[2px]
+                            xl:[:nth-of-type(3)_&]:mt-[20px]'>{project.description}</p>
+                            <p className='text-[14px] xl:text-[20px] leading-[21px] xl:leading-[30px] text-turquoise-dark font-bold mt-[3px] xl:mt-[19px]
+                            xl:[:nth-of-type(5)_&]:mt-[0px]'>{project.highlight}</p>
+                        </div>
+                        <a href={project.link}>
+                            <Button
+                                variant="regular-1"
+                                arrowColor="secondary"
+                                withArrow={true}
+                                sizeArrow="primary"
+                                className="bg-white text-turquoise-light font-bold min-w-[305px] xl:min-w-[320px] text-[14px] xl:text-[20px] leading-[20px] xl:leading-[30px] justify-center 
+                                xl:[:nth-of-type(4)_&]:min-w-[244px] xl:[:nth-of-type(5)_&]:min-w-[244px] xl:[:nth-of-type(6)_&]:min-w-[244px] xl:[:nth-of-type(5)_&]:mb-[3px]"
+                            >Подробнее</Button></a>
+                    </div>
+                ))}
+            </div>
+            <a href='#' className='xl:flex xl:flex-row xl:justify-end xl:mt-[27px]'>
                 <Button
-                  variant="regular-1"
-                  arrowColor="secondary"
-                  withArrow={true}
-                  sizeArrow="primary"
-                  className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[320px] w-[100%] justify-center"
-                >
-                  Подробнее
-                </Button>
-              </a>
-              </div> :
-                // Четвертый элемент массива
-                index === 3 ? <div key={index} className="flex flex-col md:flex-row xl:flex-col md:col-span-2 xl:col-span-1 xl:order-2 justify-between md:justify-normal rounded-[20px] 
-                bg-blue-light
-                pt-[20px] md:pt-[40px]
-                pl-[20px] md:pl-[40px]
-                pb-[19px] md:pb-[40px]
-                xl:pr-[10px]">
-                <p className="font-bold text-[18px] md:text-[30px] leading-[27px] md:leading-[45px] text-turquoise-dark mb-[9px] md:mb-[0px] xl:mb-[45px] md:max-w-[320px]">{project.title}</p>
-                <a href={project.link}>
-                  <Button
-                    variant="regular-1"
+                    variant="regular-2"
                     arrowColor="secondary"
                     withArrow={true}
                     sizeArrow="primary"
-                    className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[244px] w-[100%] justify-center
-                    md:mt-[18px] md:ml-[6px]"
-                  >
-                    Подробнее
-                  </Button>
-                </a>
-                </div> :
-                  // Пятый элемент массива
-                  index === 4 ? <div key={index} className="flex flex-col xl:order-5 justify-between rounded-[20px] bg-blue-light
-                  pt-[22px] md:pt-[40px]
-                  pl-[20px] md:pl-[40px]
-                  pb-[19px] md:pb-[40px]
-                  xl:pr-[10px]">
-                  <p className="font-bold text-[18px] md:text-[25px] leading-[27px] md:leading-[37.5px] text-turquoise-dark mb-[9px] md:mb-[54px] xl:mb-[0px]">{project.title}</p>
-                  <a href={project.link}>
-                    <Button
-                      variant="regular-1"
-                      arrowColor="secondary"
-                      withArrow={true}
-                      sizeArrow="primary"
-                      className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[244px] w-[100%] justify-center"
-                    >
-                      Подробнее
-                    </Button>
-                  </a>
-                  </div> :
-                    // Шестой элемент массива
-                    <div key={index} className="flex flex-col xl:order-6 justify-between rounded-[20px] bg-blue-light 
-                    pt-[22px] md:pt-[40px]
-                    pl-[20px] md:pl-[40px]
-                    pb-[19px] md:pb-[40px]
-                    xl:pr-[10px]">
-                    <p className="font-bold text-[18px] md:text-[25px] leading-[27px] md:leading-[37.5px] text-turquoise-dark mb-[9px] md:mb-[17px] xl:mb-[0px]">{project.title}</p>
-                    <a href={project.link}>
-                      <Button
-                        variant="regular-1"
-                        arrowColor="secondary"
-                        withArrow={true}
-                        sizeArrow="primary"
-                        className="bg-white text-turquoise-light font-bold text-[14px] md:text-[20px] leading-[17px] md:leading-[30px] max-w-[305px] md:max-w-[244px] w-[100%] justify-center"
-                      >
-                        Подробнее
-                      </Button>
-                    </a>
-                    </div>
+                    className="w-[100%] xl:max-w-[393px] bg-white text-turquoise-light mt-[30px] text-[14px] xl:text-[20px] leading-[17px] xl:leading-[30px] font-bold justify-center"
+                >Посмотреть все проекты</Button>
+            </a>
+        </div>
     );
 };
 ```
@@ -946,4 +872,7 @@ import Swiper from '../src/shared/ui/swiper/swiper';
 import { picArray, breakpoints} from '@/src/app/configs/swiper-config';
   
  <Swiper  pictureArray={picArray} breakpoints={breakpoints} infinite={true} zoomSelected={true} page={'home'}/>
+
      
+  ```
+
